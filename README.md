@@ -32,3 +32,6 @@ python3 train.py --model_dir=instability_2 --data_aug_seed=1 --cudnn_seed=1 --sh
 # Accelerated ensemble training, varying all sources of randomness
 python3 train.py --model_dir=snapshot_1 --data_aug_seed=1 --cudnn_seed=0 --shuffle_train_seed=1 --init_seed=1 --lr_schedule=snapshot5
 python3 train.py --model_dir=snapshot_2 --data_aug_seed=2 --cudnn_seed=0 --shuffle_train_seed=2 --init_seed=2 --lr_schedule=snapshot5
+
+# For Evaluation
+To calculate evaluation metrics, see example at the bottom of evaluate.py
